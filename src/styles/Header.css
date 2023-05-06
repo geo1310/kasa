@@ -1,0 +1,15 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+.nav a{
+    text-decoration: none;
+    margin-left: 40px;
+    color: #FF6060;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
