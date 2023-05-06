@@ -1,6 +1,8 @@
 .header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    
 }
 .nav ul{
     display: flex;
@@ -8,8 +10,11 @@
 }
 .nav a{
     text-decoration: none;
-    margin-left: 40px;
+    margin-left: 60px;
     color: #FF6060;
     font-size: 24px;
     font-family: 'Trebuchet MS', sans-serif;
+}
+.nav a:hover{
+    border-bottom: 2px solid #FF6060;
 }
