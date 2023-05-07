@@ -9,10 +9,15 @@
   width: 80%;
   margin-top: 30px;
 }
+.apropos button{
+  background-color:#ff6060;
+  border: none;
+  cursor: pointer;
+}
 .apropos-titre{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
     margin: 0;
     padding: 5px 15px;
     color: white;

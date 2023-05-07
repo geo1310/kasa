@@ -1,9 +1,17 @@
 import '../../styles/Apropos.css';
 import Banner from '../../components/Banner'
 import bannerPhoto from '../../assets/kalen-emsley-montagnes foret.webp'
+import vectorBas from '../../assets/VectorBas.png'
+import vectorHaut from '../../assets/VectorHaut.png'
 
 
 function Apropos() {
+
+  function ToggleText(e){
+    const element = e.target.nodeName
+    
+    console.log(element)
+  };
   
   return (
     <div>
@@ -12,8 +20,9 @@ function Apropos() {
           <div className='apropos'>
             <h2 className='apropos-titre'>
               Fiabilité
+              <button onClick={ToggleText}><img className='apropos-icone' src={vectorBas}></img></button>
             </h2>
-            <p className='apropos-text'>
+            <p className='apropos-text'style={{display: 'none'}}>
               Les annonces postées sur Kasa garantissent une fiabilité totale. 
               Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  
               par nos équipes.

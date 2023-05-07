@@ -1,7 +1,7 @@
 import '../../styles/Banner.css';
 
 function Banner(props) {
-  console.log(props.img)
+
   return (
     <div className="banner">
         <img className='banner-img' src={props.img} alt={props.img}></img>
