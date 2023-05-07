@@ -3,16 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './styles/index.css';
 import Home from './pages/Home';
 import Header from './components/Header';
+import Banner from './components/Banner'
 import Footer from './components/Footer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <div className='main'>
       <Header />
-      <Home />
+      <main className='main'>
+        <Banner />
+        <Home />
+      </main>
       <Footer />
-    </div>
+    
   </React.StrictMode>
 );

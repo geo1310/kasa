@@ -1,10 +1,10 @@
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/logo-kasa.svg';
 import '../../styles/Header.css';
 
 function Header() {
   return (
     <header className="header">
-		<img src={logo} alt='logo-kasa' className='logo-kasa-header'></img>
+		<img src={logo} alt='logo kasa header' className='logo-kasa-header'></img>
 		<div className="nav">   
 			<ul>
 				<li><a href="#about">Accueil</a></li>
