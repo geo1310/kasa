@@ -16,7 +16,7 @@ function Apropos() {
   function ToggleText(event, visible, setVisible){
     setVisible(!visible)
     const element = event.target
-    console.log(document.getElementsByClassName(element))
+  
     if (element.src===vectorBas){
       element.src=vectorHaut
     }
