@@ -1,11 +1,11 @@
 import '../../styles/Banner.css';
-import image from '../../assets/mer-cote.webp'
 
-function Banner() {
+function Banner(props) {
+  console.log(props.img)
   return (
     <div className="banner">
-        <img className='banner-img' src={image} alt='mer-cote'></img>
-        <h1 className='banner-text'>Chez vous, partout et ailleurs</h1>
+        <img className='banner-img' src={props.img} alt={props.img}></img>
+        {props.text ? <h1 className='banner-text'>{props.text}</h1> : null}
 	</div>
   );
 }
