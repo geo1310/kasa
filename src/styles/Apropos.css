@@ -3,18 +3,18 @@
   flex-direction: column;
   align-items: center;
 }
-.apropos{
+.slide{
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
   margin-top: 30px;
 }
-.apropos button{
+.slide button{
   background-color:#ff6060;
   border: none;
   cursor: pointer;
 }
-.apropos-titre{
+.slide-titre{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,7 +27,7 @@
     font-size: 24px;
     font-weight: 500;
   }
-.apropos-text{
+.slide-text{
   font-size: 24px;
   font-weight: 300;
   color: #ff6060;
