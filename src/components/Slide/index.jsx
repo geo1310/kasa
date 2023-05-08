@@ -1,5 +1,5 @@
-import vectorBas from '../../assets/VectorBas.png'
-import vectorHaut from '../../assets/VectorHaut.png'
+import vectorBas from '../../assets/icones/VectorBas.png'
+import vectorHaut from '../../assets/icones/VectorHaut.png'
 
 function Slide(props) {
 

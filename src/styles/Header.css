@@ -15,6 +15,7 @@
     font-size: 24px;
     font-family: 'Trebuchet MS', sans-serif;
 }
-.nav a:hover{
+.nav a:hover, .nav a.active{
     border-bottom: 2px solid #FF6060;
 }
+

@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 import '../../styles/Apropos.css';
 import Banner from '../../components/Banner'
-import bannerPhoto from '../../assets/kalen-emsley-montagnes foret.webp'
+import bannerPhoto from '../../assets/images/kalen-emsley-montagnes foret.webp'
 import Slide from '../../components/Slide'
 
+  
 
 function Apropos() {
 
-  const [visibleFiabilite, setVisibleFiabilite] = useState(false);
+  document.querySelector('.nav-accueil')&&document.querySelector('.nav-accueil').classList.remove('active')
+  document.querySelector('.nav-apropos')&&document.querySelector('.nav-apropos').classList.add('active')
+
+  const [visibleFiabilite, setVisibleFiabilite] = useState(true);
   const [visibleRespect, setVisibleRespect] = useState(false);
   const [visibleService, setVisibleService] = useState(false);
   const [visibleSecurite, setVisibleSecurite] = useState(false);
