@@ -1,4 +1,4 @@
-.footer{
+.footer {
     height: 200px;
     background-color: black;
     margin-top: 40px;
@@ -7,15 +7,15 @@
     justify-content: center;
     align-items: center;
 }
-.logo-kasa-footer{
+.logo-kasa-footer {
     height: 40px;
 }
-.text-footer{
+.text-footer {
     color: white;
     font-size: 24px;
     line-height: 34px;
     margin-top: 30px;
 }
-.fa-copyright{
+.fa-copyright {
     margin-right: 10px;
 }
