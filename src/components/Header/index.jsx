@@ -8,7 +8,7 @@ function Header() {
 		<img src={logo} alt='logo kasa header' className='logo-kasa-header'></img>
 		<div className="nav">   
 			<ul>
-				<li><Link className='nav-accueil' to="/">Accueil</Link></li>
+				<li><Link className='nav-accueil active' to="/">Accueil</Link></li>
 				<li><Link className='nav-apropos' to="/apropos">A propos</Link></li>
 			</ul>
 		</div>

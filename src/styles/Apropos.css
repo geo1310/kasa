@@ -3,18 +3,18 @@
   flex-direction: column;
   align-items: center;
 }
-.slide{
+.collapse{
   display: flex;
   flex-direction: column;
   width: 90%;
   margin-top: 30px;
 }
-.slide button{
+.collapse button{
   background-color:#ff6060;
   border: none;
   cursor: pointer;
 }
-.slide-titre{
+.collapse-titre{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,7 +27,7 @@
     font-size: 24px;
     font-weight: 500;
   }
-.slide-text{
+.collapse-text{
   font-size: 24px;
   font-weight: 300;
   color: #ff6060;
