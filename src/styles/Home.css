@@ -1,11 +1,11 @@
-.accueil {
+.cards {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: space-around;
+    flex-wrap: wrap;
     margin-top: 40px;
     background-color: #f6f6f6;
     border-radius: 25px;
-    height: 500px;
-    font-size: 32px;
-    font-weight: 900;
+    height: auto;
+    padding: 30px;
 }
