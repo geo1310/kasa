@@ -14,12 +14,6 @@ function Apropos() {
     const [visibleRespect, setVisibleRespect] = useState(false)
     const [visibleService, setVisibleService] = useState(false)
     const [visibleSecurite, setVisibleSecurite] = useState(false)
-
-<<<<<<< HEAD
-  const [visibleFiabilite, setVisibleFiabilite] = useState(true);
-  const [visibleRespect, setVisibleRespect] = useState(false);
-  const [visibleService, setVisibleService] = useState(false);
-  const [visibleSecurite, setVisibleSecurite] = useState(false);
   
   return (
     <div>
@@ -50,37 +44,6 @@ function Apropos() {
           <Collapse 
             titre="Sécurité" 
             text="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, 
-=======
-    return (
-        <div>
-            <Banner img={bannerPhoto} text="Chez vous, partout et ailleurs" />
-            <div className="apropos-global">
-                <Slide
-                    titre="Fiabilite"
-                    text="Les annonces postées sur Kasa garantissent une fiabilité totale. 
-              Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  
-              par nos équipes."
-                    visible={visibleFiabilite}
-                    setVisible={setVisibleFiabilite}
-                />
-                <Slide
-                    titre="Respect"
-                    text="La bienveillance fait partie des valeurs fondatrices de Kasa. 
-            Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
-                    visible={visibleRespect}
-                    setVisible={setVisibleRespect}
-                />
-                <Slide
-                    titre="Service"
-                    text="Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. 
-              N'hésitez pas à nous contacter si vous avez la moindre question."
-                    visible={visibleService}
-                    setVisible={setVisibleService}
-                />
-                <Slide
-                    titre="Sécurité"
-                    text="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, 
->>>>>>> 8606e72c5202bff25acea6e5f124ae3ae5bfd521
               chaque logement correspond aux critères de sécurité établis par nos services. 
               En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier 
               que les standards sont bien respectés. Nous organisons également des ateliers sur 
