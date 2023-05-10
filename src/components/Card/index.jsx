@@ -1,11 +1,14 @@
-import { HousingList } from '../../datas/HousingList'
+import { Link } from 'react-router-dom'
 import '../../styles/Card.css'
 
 function Card(props) {
+   
     return (
-        <div className='card'>
-
-        </div>
+        <Link className='nav-accueil' to={`/logement/:${props.id}`}>
+            <div className='card'>
+            </div>
+        </Link>
+        
     )
 }
 
