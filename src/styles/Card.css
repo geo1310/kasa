@@ -1,8 +1,21 @@
 .card{
-    width: 300px;
-    height: 300px;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.2) ,90%, rgba(0,0,0,0.3) ),#fe6262; 
+    position: relative;
+    width: 25em;
+    height: 350px;
+    flex: 1 0 20%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.2) ,70%, rgba(0,0,0,0.3) ),#fe6262; 
     border-radius: 10px;
-    margin: 10px;
+    margin: 0 0 4em 0;
     cursor: pointer;
+}
+.card-title {
+    position: absolute;
+    width: 80%;
+    font-size: 18px;
+    font-family: 'Montserrat',sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    left: 20px;
+    bottom: 20px;
 }

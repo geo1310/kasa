@@ -1,7 +1,7 @@
 .text-404 {
     font-size: 288px;
     font-weight: 700;
-    margin: 100px 0 50px 0;
+    margin: 80px 0 60px 0;
     color: #ff6060;
     text-align: center;
 }
@@ -13,7 +13,7 @@
 }
 .link-accueil {
     text-align: center;
-    margin-top: 180px;
+    margin-top: 150px;
 }
 .link-accueil a {
     font-size: 18px;

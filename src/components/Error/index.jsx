@@ -10,7 +10,7 @@ function Error404() {
                 Oups! La page que vous demandez n'existe pas.
             </div>
             <div className="link-accueil">
-                <Link to="/">Retourner sur la page d’accueil</Link>
+                <Link to="/accueil">Retourner sur la page d’accueil</Link>
             </div>
         </div>
     )
