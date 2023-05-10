@@ -1,13 +1,11 @@
-.accueil{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-  background-color: #f6f6f6;
-  border-radius: 25px;
-  height: 500px;
-  font-size: 32px;
-  font-weight: 900;
-  
-  
+.accueil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    background-color: #f6f6f6;
+    border-radius: 25px;
+    height: 500px;
+    font-size: 32px;
+    font-weight: 900;
 }

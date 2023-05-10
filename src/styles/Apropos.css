@@ -1,8 +1,9 @@
-.apropos-global{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.apropos-global {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+<<<<<<< HEAD
 .collapse{
   display: flex;
   flex-direction: column;
@@ -15,6 +16,20 @@
   cursor: pointer;
 }
 .collapse-titre{
+=======
+.slide {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 30px;
+}
+.slide button {
+    background-color: #ff6060;
+    border: none;
+    cursor: pointer;
+}
+.slide-titre {
+>>>>>>> 8606e72c5202bff25acea6e5f124ae3ae5bfd521
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,6 +41,7 @@
     height: 50px;
     font-size: 24px;
     font-weight: 500;
+<<<<<<< HEAD
   }
 .collapse-text{
   font-size: 24px;
@@ -36,3 +52,15 @@
   padding: 20px 20px;
   margin: 0;
 }
+=======
+}
+.slide-text {
+    font-size: 24px;
+    font-weight: 300;
+    color: #ff6060;
+    background-color: #f6f6f6;
+    border-radius: 0 0 5px 5px;
+    padding: 20px 20px;
+    margin: 0;
+}
+>>>>>>> 8606e72c5202bff25acea6e5f124ae3ae5bfd521
