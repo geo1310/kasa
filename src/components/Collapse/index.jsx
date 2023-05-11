@@ -1,5 +1,6 @@
 import vectorBas from '../../assets/icones/VectorBas.png'
 import vectorHaut from '../../assets/icones/VectorHaut.png'
+
 import '../../styles/Collapse.css'
 
 function Collapse(props) {

@@ -1,0 +1,12 @@
+.tags{
+margin-top: 20px;
+}
+.tag{
+   background-color: #ff6060 ;
+   padding: 10px 20px;
+   border-radius: 15px;
+   color: white;
+   font-size: 14px;
+   font-weight: 500;
+   margin-right: 20px;
+}
