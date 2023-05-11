@@ -1,0 +1,39 @@
+.logement{
+    margin-top: 50px;
+    color: red;
+    font-size: 32px;
+    font-weight: 900;
+}
+.house-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.house-title h1{
+    position: relative;
+    color: #ff6060;
+    font-weight: 500;
+    font-size: 36px;
+    margin: 0;
+}
+.house-host{
+    display: flex;
+    align-items: center;
+}
+.house-host-picture{
+    width: 100px;
+    border-radius: 50%;
+}
+.house-host-name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #ff6060;
+    margin-right: 20px;
+}
+.house-location{
+    color: #ff6060;
+    font-size: 18px;
+    font-weight: 500;
+    
+}

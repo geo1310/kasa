@@ -1,30 +1,35 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
+import '../../styles/Carousel.css'
 
-function Carousel({ images }) {
-  const [currentImage, setCurrentImage] = useState(0);
+function Carousel(props) {
+    const [currentImage, setCurrentImage] = useState(0)
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prevImage) =>
-        prevImage === images.length - 1 ? 0 : prevImage + 1
-      );
-    }, 3000);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentImage((prevImage) =>
+                prevImage === props.pictures.length - 1 ? 0 : prevImage + 1
+            )
+        }, 3000)
 
-    return () => clearInterval(interval);
-  }, [images]);
+        return () => clearInterval(interval)
+    }, [props.pictures])
 
-  return (
-    <div className="carousel">
-      {images.map((image, index) => (
-        <img
-          key={index}
-          src={image}
-          alt={`Slide ${index + 1}`}
-          className={index === currentImage ? 'slide active' : 'slide'}
-        />
-      ))}
-    </div>
-  );
-};
-
-export default Carousel;
+    return (
+        <div className="carousel">
+            {props.pictures.map((image, index) => (
+                <div key={index}>
+                    <img
+                    key={index}
+                    src={image}
+                    alt={`Slide ${index + 1}`}
+                    className={
+                        index === currentImage ? 'slide active' : 'slide'
+                    }
+                />
+                </div>
+                
+            ))}
+        </div>
+    )
+}
+export default Carousel

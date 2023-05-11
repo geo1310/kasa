@@ -16,7 +16,19 @@ function Home() {
             <Banner img={bannerPhoto} text="Chez vous, partout et ailleurs" />
             <div className="cards">
                 {housingList.map((house) => (
-                    <Card key={house.id} id={house.id} title={house.title}/>
+                    <Card 
+                        key={house.id} 
+                        id={house.id} 
+                        title={house.title} 
+                        cover={house.cover} 
+                        pictures={house.pictures} 
+                        description={house.description}
+                        host={house.host}
+                        rating={house.rating}
+                        location={house.location}
+                        equipments={house.equipments}
+                        tags={house.tags}
+                    />
                 ))}
             </div>
         </div>
