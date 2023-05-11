@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { housingList } from '../../datas/housingList'
+import { housingList } from '../../datas/HousingList'
 import Carousel from '../../components/Carousel'
 import Collapse from '../../components/Collapse'
 import Tags from '../../components/Tags'
