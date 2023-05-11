@@ -17,9 +17,9 @@ function Carousel(props) {
     return (
         <div className="carousel">
             {props.pictures.map((image, index) => (
+                
                 <div key={index}>
                     <img
-                    key={index}
                     src={image}
                     alt={`Slide ${index + 1}`}
                     className={

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { housingList } from '../../datas/HousingList'
+import { housingList } from '../../datas/housingList'
 import Carousel from '../../components/Carousel'
 import Collapse from '../../components/Collapse'
 import Error from '../../components/Error'
@@ -11,73 +11,71 @@ function Logement() {
     const [visibleDescription, setVisibleDescription] = useState(true)
     const [visibleEquipements, setVisibleEquipements] = useState(true)
     const [isId, setIsId] = useState(false)
-    const [houseIndex, setHouseIndex]= useState()
+    const [houseIndex, setHouseIndex] = useState()
+
     document.querySelector('.nav-accueil') &&
-    document.querySelector('.nav-accueil').classList.remove('active')
+        document.querySelector('.nav-accueil').classList.remove('active')
     document.querySelector('.nav-apropos') &&
-    document.querySelector('.nav-apropos').classList.remove('active')
+        document.querySelector('.nav-apropos').classList.remove('active')
     const { id } = useParams()
 
     useEffect(() => {
-        housingList.forEach((house) =>{
-            if(house.id===id){
+        housingList.forEach((house2) => {
+            if (house2.id === id) {
                 setIsId(true)
-                setHouseIndex(housingList.indexOf(house))
-                const houseChoice = housingList[houseIndex] 
+                setHouseIndex(housingList.indexOf(house2))
             }
         })
-    },  )
+    })
 
     return (
         <div className="house">
-            {housingList.map((house) => {
-                if (house.id === id) {             
-                    return (
-                        <div key={house.id} className="house-global">
-                            <Carousel pictures={house.pictures} />
-                            <div className="house-title">
-                                <span>
-                                    <h1>{house.title}</h1>
-                                    <span className="house-location">
-                                        {house.location}
-                                    </span>
-                                </span>
-                                <div className="house-host">
-                                    <span className="house-host-name">
-                                        {house.host.name}
-                                    </span>
-                                    <img
-                                        className="house-host-picture"
-                                        alt={house.host.name}
-                                        src={house.host.picture}
-                                    ></img>
-                                </div>
-                            </div>
-                            <div className="house-tags">
-                                <Tags tags={house.tags} />
-                            </div>
-                            <div className="house-collapse">
-                                <Collapse
-                                    titre="Description"
-                                    listeTexte={house.description.split()}
-                                    visible={visibleDescription}
-                                    setVisible={setVisibleDescription}
-                                />
-                                <Collapse
-                                    titre="Equipements"
-                                    listeTexte={house.equipments}
-                                    visible={visibleEquipements}
-                                    setVisible={setVisibleEquipements}
-                                />
-                            </div>
+            {isId ? (
+                <div key={housingList[houseIndex].id} className="house-global">
+                    <Carousel pictures={housingList[houseIndex].pictures} />
+                    <div className="house-title">
+                        <span>
+                            <h1>{housingList[houseIndex].title}</h1>
+                            <span className="house-location">
+                                {housingList[houseIndex].location}
+                            </span>
+                        </span>
+                        <div className="house-host">
+                            <span className="house-host-name">
+                                {housingList[houseIndex].host.name}
+                            </span>
+                            <img
+                                className="house-host-picture"
+                                alt={housingList[houseIndex].host.name}
+                                src={housingList[houseIndex].host.picture}
+                            ></img>
                         </div>
-                    )
-                }
-                return null
-            })}
+                    </div>
+                    <div className="house-tags">
+                        <Tags tags={housingList[houseIndex].tags} />
+                    </div>
+                    <div className="house-collapse">
+                        <Collapse
+                            titre="Description"
+                            listeTexte={housingList[
+                                houseIndex
+                            ].description.split()}
+                            visible={visibleDescription}
+                            setVisible={setVisibleDescription}
+                        />
+                        <Collapse
+                            titre="Equipements"
+                            listeTexte={housingList[houseIndex].equipments}
+                            visible={visibleEquipements}
+                            setVisible={setVisibleEquipements}
+                        />
+                    </div>
+                </div>
+            ) : (
+                <Error />
+            )}
         </div>
     )
-    
 }
 
 export default Logement
