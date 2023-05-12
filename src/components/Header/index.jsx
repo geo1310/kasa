@@ -1,3 +1,8 @@
+/* 
+Composant Header
+Création d'un header
+*/
+
 import { Link } from 'react-router-dom'
 import logo from '../../assets/logos/logo-kasa.svg'
 import '../../styles/Header.css'

@@ -1,22 +1,29 @@
+/* 
+Composant Carousel
+Création d'un carousel faisant défiler une liste d'images
+Props:
+pictures: liste d'images
+*/
+
 import React, { useState, useEffect } from 'react'
 import '../../styles/Carousel.css'
 
-function Carousel(props) {
+function Carousel({pictures}) {
     const [currentImage, setCurrentImage] = useState(0)
 
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentImage((prevImage) =>
-                prevImage === props.pictures.length - 1 ? 0 : prevImage + 1
+                prevImage === pictures.length - 1 ? 0 : prevImage + 1
             )
         }, 3000)
 
         return () => clearInterval(interval)
-    }, [props.pictures])
+    }, [pictures])
 
     return (
         <div className="carousel">
-            {props.pictures.map((image, index) => (
+            {pictures.map((image, index) => (
                 
                 <div key={index}>
                     <img

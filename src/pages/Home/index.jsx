@@ -6,6 +6,7 @@ import {housingList} from '../../datas/housingList'
 
 
 function Home() {
+    /* mise à jour du sous-lignement du menu de navigation*/
     document.querySelector('.nav-accueil') &&
     document.querySelector('.nav-accueil').classList.add('active')
     document.querySelector('.nav-apropos') &&
@@ -13,21 +14,14 @@ function Home() {
 
     return (
         <div>
-            <Banner img={bannerPhoto} text="Chez vous, partout et ailleurs" />
+            <Banner img={bannerPhoto} title="Chez vous, partout et ailleurs" />
             <div className="cards">
                 {housingList.map((house) => (
                     <Card 
                         key={house.id} 
                         id={house.id} 
-                        title={house.title} 
-                        cover={house.cover} 
-                        pictures={house.pictures} 
-                        description={house.description}
-                        host={house.host}
-                        rating={house.rating}
-                        location={house.location}
-                        equipments={house.equipments}
-                        tags={house.tags}
+                        title={house.title}
+                        url={'/logement/'+house.id}
                     />
                 ))}
             </div>

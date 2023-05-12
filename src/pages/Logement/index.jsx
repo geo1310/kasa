@@ -8,25 +8,29 @@ import Tags from '../../components/Tags'
 import '../../styles/Logement.css'
 
 function Logement() {
+
+    /* Déclaration des useState*/
     const [visibleDescription, setVisibleDescription] = useState(true)
     const [visibleEquipements, setVisibleEquipements] = useState(true)
     const [isId, setIsId] = useState(false)
     const [houseIndex, setHouseIndex] = useState()
 
+    /* mise à jour du sous-lignement du menu de navigation*/
     document.querySelector('.nav-accueil') &&
         document.querySelector('.nav-accueil').classList.remove('active')
     document.querySelector('.nav-apropos') &&
         document.querySelector('.nav-apropos').classList.remove('active')
-    const { id } = useParams()
-
-    useEffect(() => {
-        housingList.forEach((house2) => {
-            if (house2.id === id) {
-                setIsId(true)
-                setHouseIndex(housingList.indexOf(house2))
-            }
+    
+        /* Vérification du parametre id de l'url*/
+        const { id } = useParams()
+        useEffect(() => {
+            housingList.forEach((house2) => {
+                if (house2.id === id) {
+                    setIsId(true)
+                    setHouseIndex(housingList.indexOf(house2))
+                }
+            })
         })
-    })
 
     return (
         <div className="house">
@@ -56,16 +60,16 @@ function Logement() {
                     </div>
                     <div className="house-collapse">
                         <Collapse
-                            titre="Description"
-                            listeTexte={housingList[
+                            title="Description"
+                            textList={housingList[
                                 houseIndex
                             ].description.split()}
                             visible={visibleDescription}
                             setVisible={setVisibleDescription}
                         />
                         <Collapse
-                            titre="Equipements"
-                            listeTexte={housingList[houseIndex].equipments}
+                            title="Equipements"
+                            textList={housingList[houseIndex].equipments}
                             visible={visibleEquipements}
                             setVisible={setVisibleEquipements}
                         />

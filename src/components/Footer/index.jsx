@@ -1,3 +1,8 @@
+/* 
+Composant Footer
+Création d'un footer
+*/
+
 import '../../styles/Footer.css'
 import logo from '../../assets/logos/logo-kasa-white.png'
 
