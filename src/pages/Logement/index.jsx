@@ -9,7 +9,6 @@ import Rate from '../../components/Rate'
 import '../../styles/Logement.css'
 
 function Logement() {
-
     /* Déclaration des useState*/
     const [visibleDescription, setVisibleDescription] = useState(true)
     const [visibleEquipements, setVisibleEquipements] = useState(true)
@@ -21,21 +20,21 @@ function Logement() {
         document.querySelector('.nav-accueil').classList.remove('active')
     document.querySelector('.nav-apropos') &&
         document.querySelector('.nav-apropos').classList.remove('active')
-    
-        /* Vérification du parametre id de l'url*/
-        const { id } = useParams()
-        useEffect(() => {
-            housingList.forEach((house2) => {
-                if (house2.id === id) {
-                    setIsId(true)
-                    setHouseIndex(housingList.indexOf(house2))
-                }
-            })
+
+    /* Vérification du parametre id de l'url*/
+    const { id } = useParams()
+    useEffect(() => {
+        housingList.forEach((house2) => {
+            if (house2.id === id) {
+                setIsId(true)
+                setHouseIndex(housingList.indexOf(house2))
+            }
         })
+    })
 
     return (
         <div className="house">
-            {isId ? 
+            {isId ? (
                 <div key={housingList[houseIndex].id} className="house-global">
                     <Carousel pictures={housingList[houseIndex].pictures} />
                     <div className="house-title">
@@ -77,9 +76,9 @@ function Logement() {
                         />
                     </div>
                 </div>
-             : 
-               <Error />
-            }
+            ) : (
+                <Error />
+            )}
         </div>
     )
 }
