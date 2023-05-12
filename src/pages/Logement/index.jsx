@@ -5,6 +5,7 @@ import Carousel from '../../components/Carousel'
 import Collapse from '../../components/Collapse'
 import Error from '../../components/Error'
 import Tags from '../../components/Tags'
+import Rate from '../../components/Rate'
 import '../../styles/Logement.css'
 
 function Logement() {
@@ -34,7 +35,7 @@ function Logement() {
 
     return (
         <div className="house">
-            {isId ? (
+            {isId ? 
                 <div key={housingList[houseIndex].id} className="house-global">
                     <Carousel pictures={housingList[houseIndex].pictures} />
                     <div className="house-title">
@@ -55,8 +56,9 @@ function Logement() {
                             ></img>
                         </div>
                     </div>
-                    <div className="house-tags">
+                    <div className="house-tags-rating">
                         <Tags tags={housingList[houseIndex].tags} />
+                        <Rate rating={housingList[houseIndex].rating} />
                     </div>
                     <div className="house-collapse">
                         <Collapse
@@ -75,9 +77,9 @@ function Logement() {
                         />
                     </div>
                 </div>
-            ) : (
-                <Error />
-            )}
+             : 
+               <Error />
+            }
         </div>
     )
 }

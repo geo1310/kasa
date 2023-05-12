@@ -1,0 +1,9 @@
+.fa-star{
+    font-size: 20px;
+    color: #e3e3e3;
+    margin-left: 10px;
+}
+.fa-star.active{
+    font-size: 20px;
+    color: #ff6060;
+}

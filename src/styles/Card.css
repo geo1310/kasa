@@ -3,7 +3,7 @@
     width: 25em;
     height: 25em;
     flex: 1 0 20%;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.2) ,70%, rgba(0,0,0,0.3) ),#fe6262; 
+    background: linear-gradient(to bottom, rgba(255,255,255,0.2) ,60%, rgba(0,0,0,0.5) ),#ff6060; 
     border-radius: 10px;
     margin: 0 0 4em 0;
     cursor: pointer;

@@ -2,7 +2,7 @@
 Composant Tags
 Création d'une liste de tags avec un style defini
 Props:
-tags: liste de tags sous forme de liste
+tags: tags sous forme de liste
 */
 
 import '../../styles/Tags.css'
