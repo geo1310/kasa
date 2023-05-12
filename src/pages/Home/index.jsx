@@ -17,6 +17,7 @@ function Home() {
                         id={house.id} 
                         title={house.title}
                         url={'/logement/'+house.id}
+                        cover={house.cover}
                     />
                 ))}
             </div>

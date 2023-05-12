@@ -2,11 +2,12 @@
     position: relative;
     width: 25em;
     height: 25em;
-    flex: 1 0 20%;
+    flex: 0 0 20%;
     background: linear-gradient(to bottom, rgba(255,255,255,0.2) ,60%, rgba(0,0,0,0.5) ),#ff6060; 
     border-radius: 10px;
     margin: 0 0 4em 0;
     cursor: pointer;
+    box-shadow: 5px 5px 15px grey;
 }
 .card-title {
     position: absolute;
@@ -18,4 +19,12 @@
     font-weight: 500;
     left: 20px;
     bottom: 20px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+}
+.card-img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
 }
