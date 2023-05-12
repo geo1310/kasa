@@ -30,7 +30,7 @@ function Logement() {
                 setHouseIndex(housingList.indexOf(house2))
             }
         })
-    })
+    },[id])
 
     return (
         <div className="house">

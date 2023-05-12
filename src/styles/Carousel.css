@@ -6,6 +6,21 @@
     margin-top: 50px;
     border-radius: 25px;
   }
+  .buttons-container.active{
+    width: 100%;
+    color: white;
+    font-weight: 900;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%)
+  }
+  .fa-chevron-left, .fa-chevron-right{
+    margin: 0 40px 0 40px;
+    font-size: 64px;
+    cursor: pointer;
+  }
   
   .slide {
     position: absolute; /* Utiliser un positionnement absolu */
