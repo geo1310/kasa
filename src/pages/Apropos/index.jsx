@@ -6,13 +6,7 @@ import Collapse from '../../components/Collapse'
 
 function Apropos() {
 
-    /* mise à jour du sous-lignement du menu de navigation*/
-    document.querySelector('.nav-accueil') &&
-        document.querySelector('.nav-accueil').classList.remove('active')
-    document.querySelector('.nav-apropos') &&
-        document.querySelector('.nav-apropos').classList.add('active')
-
-    /* Déclaration des useState*/
+    /* Déclaration des useState pour la visibilité des collapses*/
     const [visibleFiabilite, setVisibleFiabilite] = useState(true)
     const [visibleRespect, setVisibleRespect] = useState(false)
     const [visibleService, setVisibleService] = useState(false)
@@ -20,7 +14,7 @@ function Apropos() {
 
     return (
         <div>
-            <Banner img={bannerPhoto} title="A propos de Kasa" />
+            <Banner img={bannerPhoto} title="" />
             <div className="apropos-global">
                 <Collapse
                     title="Fiabilite"

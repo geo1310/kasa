@@ -21,11 +21,9 @@ function Collapse({title, textList, visible, setVisible}) {
 
     return (
         <div className="collapse">
-            <h2 className="collapse-titre">
+            <h2 className="collapse-titre" onClick={() => ToggleText(visible, setVisible)}>
                 {title}
-                <button
-                    onClick={() => ToggleText(visible, setVisible)}
-                >
+                <button>
                     {!visible ? (
                         <img
                             className="collapse-icone"
@@ -41,7 +39,7 @@ function Collapse({title, textList, visible, setVisible}) {
                     )}
                 </button>
             </h2>
-            {visible && textList&& <ul className="collapse-text">
+            {visible && <ul className="collapse-text">
                       {textList.map((item,index)=>(
                         <li key={index}>
                             {item}

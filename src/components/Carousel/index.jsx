@@ -5,40 +5,57 @@ Props:
 pictures: liste d'images
 */
 
-import React, { useState, useEffect } from 'react'
-import '../../styles/Carousel.css'
+import React, { useState, useEffect } from 'react';
+import '../../styles/Carousel.css';
 
-function Carousel({ pictures }) {
-    const [currentImage, setCurrentImage] = useState(0)
-    const [buttonsClass, setButtonsClass] = useState('active')
-
+function Carousel({ pictures}) {
+    const [currentImage, setCurrentImage] = useState(0);
+    const [isPaused, setIsPaused] = useState(false);
+    const [buttonsClass, setButtonsClass] = useState('active');
+    
     useEffect(() => {
         if (pictures.length === 1) {
-            setButtonsClass('')
+            setButtonsClass('');
         }
         const interval = setInterval(() => {
-            setCurrentImage((prevImage) =>
-                prevImage === pictures.length - 1 ? 0 : prevImage + 1
-            )
-        }, 5000)
+            if (!isPaused) {
+                setCurrentImage((prevImage) =>
+                    prevImage === pictures.length - 1 ? 0 : prevImage + 1
+                );
+            }
+        }, 4000);
 
-        return () => clearInterval(interval)
-    }, [pictures])
+        return () => clearInterval(interval);
+    }, [pictures,isPaused]);
 
+    /* action sur le bouton precedent*/
     const goToPrevious = () => {
         setCurrentImage((prevImage) =>
             prevImage === 0 ? pictures.length - 1 : prevImage - 1
-        )
-    }
+        );
+    };
 
+    /* action sur le bouton suivant*/
     const goToNext = () => {
         setCurrentImage((prevImage) =>
             prevImage === pictures.length - 1 ? 0 : prevImage + 1
-        )
+        );
+    };
+
+    /* mise en pause du carousel*/
+    const mouseEnter= () => {
+        setIsPaused(true)
+    }
+    const mouseLeave= () => {
+        setIsPaused(false)
     }
 
     return (
-        <div className="carousel">
+        <div 
+            className="carousel"
+            onMouseEnter={mouseEnter}
+            onMouseLeave={mouseLeave}
+        >
             <div className="images-container">
                 {pictures.map((image, index) => (
                     <div key={index}>
@@ -55,15 +72,18 @@ function Carousel({ pictures }) {
                 ))}
             </div>
             <div className={`buttons-container ${buttonsClass}`}>
-                <div onClick={goToPrevious}>
+                <div className='previous' onClick={goToPrevious}>
                     <i className="fa-solid fa-chevron-left"></i>
                 </div>
-                <div onClick={goToNext}>
+                <div className='next' onClick={goToNext}>
                     <i className="fa-solid fa-chevron-right"></i>
                 </div>
             </div>
+            <div className="indicators">
+                {currentImage+1}/{pictures.length}
+            </div>
         </div>
-    )
+    );
 }
 
-export default Carousel
+export default Carousel;

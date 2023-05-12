@@ -7,7 +7,6 @@
   .collapse button{
     background-color:#ff6060;
     border: none;
-    cursor: pointer;
   }
   .collapse-titre{
       display: flex;
@@ -21,6 +20,7 @@
       height: 50px;
       font-size: 24px;
       font-weight: 500;
+      cursor: pointer;
     }
   .collapse-text{
     font-size: 24px;
