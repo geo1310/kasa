@@ -20,7 +20,7 @@ function Logement() {
     if (hebergement) {
         return (
             <div key={hebergement.id} className="house-global">
-                <Carousel pictures={hebergement.pictures} id={id}/>
+                <Carousel pictures={hebergement.pictures} id={id} />
                 <div className="house-title">
                     <div>
                         <h1>{hebergement.title}</h1>

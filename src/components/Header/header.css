@@ -14,9 +14,11 @@
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
 }
-.nav a:hover, .nav-accueil.active, .nav-apropos.active{
-    border-bottom: 2px solid #FF6060;
+.nav a:hover,
+.nav-accueil.active,
+.nav-apropos.active {
+    border-bottom: 2px solid #ff6060;
 }
-.logo-kasa-header{
+.logo-kasa-header {
     height: 50px;
 }

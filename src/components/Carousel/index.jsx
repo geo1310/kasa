@@ -5,15 +5,15 @@ Props:
 pictures: liste d'images
 */
 
-import { v4 as uuidv4 } from 'uuid';//Génération de clés uniques
+import { v4 as uuidv4 } from 'uuid'; //Génération de clés uniques
 import React, { useState, useEffect } from 'react';
 import './carousel.css';
 
-function Carousel({ pictures, id}) {
+function Carousel({ pictures, id }) {
     const [currentImage, setCurrentImage] = useState(0);
     const [isPaused, setIsPaused] = useState(false);
     const [buttonsClass, setButtonsClass] = useState('active');
-    
+
     useEffect(() => {
         if (pictures.length === 1) {
             setButtonsClass('');
@@ -27,7 +27,7 @@ function Carousel({ pictures, id}) {
         }, 4000);
 
         return () => clearInterval(interval);
-    }, [pictures,isPaused]);
+    }, [pictures, isPaused]);
 
     /* action sur le bouton precedent*/
     const goToPrevious = () => {
@@ -44,15 +44,15 @@ function Carousel({ pictures, id}) {
     };
 
     /* mise en pause du carousel*/
-    const mouseEnter= () => {
-        setIsPaused(true)
-    }
-    const mouseLeave= () => {
-        setIsPaused(false)
-    }
-   
+    const mouseEnter = () => {
+        setIsPaused(true);
+    };
+    const mouseLeave = () => {
+        setIsPaused(false);
+    };
+
     return (
-        <div 
+        <div
             className="carousel"
             onMouseEnter={mouseEnter}
             onMouseLeave={mouseLeave}
@@ -73,15 +73,15 @@ function Carousel({ pictures, id}) {
                 ))}
             </div>
             <div className={`buttons-container ${buttonsClass}`}>
-                <div className='previous' onClick={goToPrevious}>
+                <div className="previous" onClick={goToPrevious}>
                     <i className="fa-solid fa-chevron-left"></i>
                 </div>
-                <div className='next' onClick={goToNext}>
+                <div className="next" onClick={goToNext}>
                     <i className="fa-solid fa-chevron-right"></i>
                 </div>
             </div>
             <div className="indicators">
-                {currentImage+1}/{pictures.length}
+                {currentImage + 1}/{pictures.length}
             </div>
         </div>
     );

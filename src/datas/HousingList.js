@@ -558,4 +558,4 @@ export const housingList = [
         ],
         tags: ['Louvre', 'Marais', 'Rivoli'],
     },
-]
+];

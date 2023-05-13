@@ -3,11 +3,10 @@ Composant Error
 Création d'un contenu erreur 404 en cas d'url incorrecte
 */
 
-import { Link } from 'react-router-dom'
-import './error.css'
+import { Link } from 'react-router-dom';
+import './error.css';
 
 function Error404() {
-
     return (
         <div className="error-404">
             <h1 className="text-404">404</h1>
@@ -18,7 +17,7 @@ function Error404() {
                 <Link to="/accueil">Retourner sur la page d’accueil</Link>
             </div>
         </div>
-    )
+    );
 }
 
-export default Error404
+export default Error404;

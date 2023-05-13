@@ -3,8 +3,8 @@ Composant Footer
 Création d'un footer
 */
 
-import './footer.css'
-import logo from '../../assets/logos/logo-kasa-white.png'
+import './footer.css';
+import logo from '../../assets/logos/logo-kasa-white.png';
 
 function Footer() {
     return (
@@ -19,7 +19,7 @@ function Footer() {
                 2020 Kasa. All rights reserved
             </div>
         </footer>
-    )
+    );
 }
 
-export default Footer
+export default Footer;

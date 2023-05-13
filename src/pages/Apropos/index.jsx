@@ -1,16 +1,15 @@
-import React, { useState } from 'react'
-import '../../styles/Apropos.css'
-import Banner from '../../components/Banner'
-import bannerPhoto from '../../assets/images/kalen-emsley-montagnes foret.webp'
-import Collapse from '../../components/Collapse'
+import React, { useState } from 'react';
+import '../../styles/Apropos.css';
+import Banner from '../../components/Banner';
+import bannerPhoto from '../../assets/images/kalen-emsley-montagnes foret.webp';
+import Collapse from '../../components/Collapse';
 
 function Apropos() {
-
     /* Déclaration des useState pour la visibilité des collapses*/
-    const [visibleFiabilite, setVisibleFiabilite] = useState(true)
-    const [visibleRespect, setVisibleRespect] = useState(false)
-    const [visibleService, setVisibleService] = useState(false)
-    const [visibleSecurite, setVisibleSecurite] = useState(false)
+    const [visibleFiabilite, setVisibleFiabilite] = useState(true);
+    const [visibleRespect, setVisibleRespect] = useState(false);
+    const [visibleService, setVisibleService] = useState(false);
+    const [visibleSecurite, setVisibleSecurite] = useState(false);
 
     return (
         <div>
@@ -18,31 +17,39 @@ function Apropos() {
             <div className="apropos-global">
                 <Collapse
                     title="Fiabilite"
-                    textList={["Les annonces postées sur Kasa garantissent une fiabilité totale.Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."]}
+                    textList={[
+                        'Les annonces postées sur Kasa garantissent une fiabilité totale.Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.',
+                    ]}
                     visible={visibleFiabilite}
                     setVisible={setVisibleFiabilite}
                 />
                 <Collapse
                     title="Respect"
-                    textList={["La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."]}
+                    textList={[
+                        'La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.',
+                    ]}
                     visible={visibleRespect}
                     setVisible={setVisibleRespect}
                 />
                 <Collapse
                     title="Service"
-                    textList={["Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite.N'hésitez pas à nous contacter si vous avez la moindre question."]}
+                    textList={[
+                        "Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite.N'hésitez pas à nous contacter si vous avez la moindre question.",
+                    ]}
                     visible={visibleService}
                     setVisible={setVisibleService}
                 />
                 <Collapse
                     title="Sécurité"
-                    textList={["La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs,chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."]}
+                    textList={[
+                        "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs,chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.",
+                    ]}
                     visible={visibleSecurite}
                     setVisible={setVisibleSecurite}
                 />
             </div>
         </div>
-    )
+    );
 }
 
-export default Apropos
+export default Apropos;
