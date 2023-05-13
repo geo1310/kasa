@@ -8,7 +8,7 @@ import {housingList} from '../../datas/housingList'
 function Home() {
 
     return (
-        <div>
+        <div className='house-global'>
             <Banner img={bannerPhoto} title="Chez vous, partout et ailleurs" />
             <div className="cards">
                 {housingList.map((house) => (

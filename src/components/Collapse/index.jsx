@@ -8,6 +8,7 @@ visible= useState visible de l'element concerne
 setVisible= mise à jour du useState de l element concerne
 */
 
+import { v4 as uuidv4 } from 'uuid';//Génération de clés uniques
 import vectorBas from '../../assets/icones/VectorBas.png'
 import vectorHaut from '../../assets/icones/VectorHaut.png'
 
@@ -41,7 +42,7 @@ function Collapse({title, textList, visible, setVisible}) {
             </h2>
             {visible && <ul className="collapse-text">
                       {textList.map((item,index)=>(
-                        <li key={index}>
+                        <li key={uuidv4()}>
                             {item}
                         </li>
                       ))}
