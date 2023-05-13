@@ -29,3 +29,11 @@
         font-size: 14px;
     }
 }
+@media (max-width: 330px) {
+    .footer{
+        margin-top: 30px;
+    }
+    .text-footer{
+        font-size: 12px;
+    }
+}

@@ -5,7 +5,7 @@
     height: 600px; /* Définir la hauteur souhaitée */
     margin-top: 50px;
     border-radius: 25px;
-    cursor:cell;
+    cursor: cell;
 }
 .buttons-container.active {
     width: 100%;
@@ -45,17 +45,61 @@
     bottom: 20px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
 }
-.previous {
-    display: flex;
-    align-items: center;
-    height: 400px;
-    cursor: pointer;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
-}
+.previous,
 .next {
     display: flex;
     align-items: center;
     height: 400px;
     cursor: pointer;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+}
+
+@media (max-width: 600px) {
+    .carousel {
+        height: 300px; /* Définir la hauteur souhaitée */
+        margin-top: 10px;
+        border-radius: 10px;
+        cursor: cell;
+    }
+    .fa-chevron-left,
+    .fa-chevron-right {
+        margin: 0 20px 0 20px;
+        font-size: 28px;
+    }
+    .indicators {
+        font-size: 18px;
+        left: 50%;
+        transform: translatex(-50%);
+        bottom: 10px;
+    }
+    .previous {
+        height: 300px;
+    }
+    .next {
+        height: 300px;
+    }
+}
+@media (max-width: 330px) {
+    .carousel {
+        height: 200px; /* Définir la hauteur souhaitée */
+        margin-top: 0;
+        border-radius: 10px;
+        cursor: cell;
+    }
+    .fa-chevron-left,
+    .fa-chevron-right {
+        margin: 0 10px 0 10px;
+        font-size: 20px;
+    }
+    .indicators {
+        font-size: 14px;
+        left: 50%;
+        bottom: 10px;
+    }
+    .previous {
+        height: 200px;
+    }
+    .next {
+        height: 200px;
+    }
 }

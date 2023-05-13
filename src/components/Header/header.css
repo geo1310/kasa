@@ -32,3 +32,12 @@
         margin-left: 20px;
     }
 }
+@media (max-width: 330px) {
+    .logo-kasa-header {
+        height: 25px;
+    }
+    .nav a {
+        font-size: 12px;
+        margin-left: 15px;
+    }
+}

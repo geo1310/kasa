@@ -21,28 +21,31 @@ function Logement() {
         return (
             <div key={hebergement.id} className="house-global">
                 <Carousel pictures={hebergement.pictures} id={id} />
-                <div className="house-title">
-                    <div>
-                        <h1>{hebergement.title}</h1>
-                        <span className="house-location">
-                            {hebergement.location}
-                        </span>
+                <div className="house-blocs">
+                    <div className="house-bloc1">
+                        <div className="house-title">
+                            <h1>{hebergement.title}</h1>
+                            <span className="house-location">
+                                {hebergement.location}
+                            </span>
+                        </div>
+                        <Tags tags={hebergement.tags} />
                     </div>
-                    <div className="house-host">
-                        <span className="house-host-name">
-                            {hebergement.host.name}
-                        </span>
-                        <img
-                            className="house-host-picture"
-                            alt={hebergement.host.name}
-                            src={hebergement.host.picture}
-                        ></img>
+                    <div className="house-bloc2">
+                        <div className="house-host">
+                            <span className="house-host-name">
+                                {hebergement.host.name}
+                            </span>
+                            <img
+                                className="house-host-picture"
+                                alt={hebergement.host.name}
+                                src={hebergement.host.picture}
+                            ></img>
+                        </div>
+                        <Rate rating={hebergement.rating} />
                     </div>
                 </div>
-                <div className="house-tags-rating">
-                    <Tags tags={hebergement.tags} />
-                    <Rate rating={hebergement.rating} />
-                </div>
+
                 <div className="house-collapse">
                     <Collapse
                         title="Description"

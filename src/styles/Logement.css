@@ -1,8 +1,24 @@
-.house-title {
+.house-blocs{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-top: 20px;
+}
+.house-bloc1{
+    display: flex;
+    flex-direction: column;
+}
+.house-bloc2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.house-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 .house-title h1 {
     position: relative;
@@ -45,13 +61,33 @@
     margin-top: 20px;
 }
 @media (max-width: 600px) {
+
+    .house-blocs{
+        flex-direction: column;
+        align-items: flex-start;
+        
+        margin-top: 10px;
+    }
+    .house-bloc2{
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .house-host-name {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    .house-host-picture {
+        width: 50px;
+    }
     .house-title {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        
-        
-        margin-top: 20px;
+        margin-top: 5px;
+        margin-bottom: 20px;
     }
     .house-title h1 {
         font-size: 18px;
@@ -62,7 +98,38 @@
     }
     .house-collapse {
         flex-direction: column;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 }
+@media (max-width: 330px) {
 
+    .house-blocs{
+        
+        margin-top: 10px;
+    }
+    .house-bloc2{
+        margin-top: 10px;
+    }
+    .house-host-name {
+        font-size: 9px;
+        margin-right: 5px;
+    }
+    .house-host-picture {
+        width: 40px;
+    }
+    .house-title {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .house-title h1 {
+        font-size: 12px;
+        margin: 0;
+    }
+    .house-location {
+        font-size: 10px;
+    }
+    .house-collapse {
+        flex-direction: column;
+        margin-top: 5px;
+    }
+}

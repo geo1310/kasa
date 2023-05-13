@@ -1,9 +1,30 @@
+.rate{
+    margin-top: 25px;
+}
 .fa-star {
     font-size: 20px;
     color: #e3e3e3;
     margin-left: 10px;
 }
 .fa-star.active {
-    font-size: 20px;
     color: #ff6060;
+}
+
+@media (max-width: 600px) {
+    .rate{
+        margin-top: 0;
+    }
+    .fa-star {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+}
+@media (max-width: 330px) {
+    .rate{
+        margin-top: 0;
+    }
+    .fa-star {
+        font-size: 12px;
+        margin-left: 3px;
+    }
 }

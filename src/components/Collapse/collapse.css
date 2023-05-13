@@ -52,3 +52,20 @@ ul {
     }
     
 }
+@media (max-width: 330px) {
+    .collapse{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .collapse-titre{
+        height: 20px;
+        font-size: 14px;
+    }
+    .collapse-text{
+        font-size: 12px;
+    }
+    .collapse-icone{
+        height: 7px;
+    }
+    
+}
