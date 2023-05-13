@@ -6,7 +6,7 @@ pictures: liste d'images
 */
 
 import React, { useState, useEffect } from 'react';
-import '../../styles/Carousel.css';
+import './carousel.css';
 
 function Carousel({ pictures}) {
     const [currentImage, setCurrentImage] = useState(0);

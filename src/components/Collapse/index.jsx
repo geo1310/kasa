@@ -11,7 +11,7 @@ setVisible= mise à jour du useState de l element concerne
 import vectorBas from '../../assets/icones/VectorBas.png'
 import vectorHaut from '../../assets/icones/VectorHaut.png'
 
-import '../../styles/Collapse.css'
+import './collapse.css'
 
 function Collapse({title, textList, visible, setVisible}) {
     

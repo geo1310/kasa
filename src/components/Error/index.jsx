@@ -4,7 +4,7 @@ Création d'un contenu erreur 404 en cas d'url incorrecte
 */
 
 import { Link } from 'react-router-dom'
-import '../../styles/Error.css'
+import './error.css'
 
 function Error404() {
 

@@ -5,7 +5,7 @@ Props:
 rating: note de 1 à 5
 */
 
-import '../../styles/Rate.css'
+import './rate.css'
 
 function Rate({rating}) {
     const rateList = [0, 0, 0, 0, 0]

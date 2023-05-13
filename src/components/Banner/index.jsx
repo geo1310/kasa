@@ -5,7 +5,7 @@ Props :
 img : image de la banniere
 title : titre centré sur la banniere
 */
-import '../../styles/Banner.css'
+import './banner.css'
 
 function Banner({img, title}) {
     return (
