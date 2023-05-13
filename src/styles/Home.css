@@ -9,3 +9,14 @@
     height: auto;
     padding: 80px 50px;
 }
+
+@media (max-width: 600px) {
+    .cards{
+        margin-top: 20px;
+        border-radius: 0;
+        background-color: white;
+        padding: 0;
+
+    }
+}
+

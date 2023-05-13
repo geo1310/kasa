@@ -1,7 +1,6 @@
 .banner {
     position: relative;
     height: 250px;
-    max-height: 250px;
     margin-top: 50px;
 }
 .banner-img {
@@ -14,10 +13,23 @@
     position: absolute;
     margin: 0;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 25%;
+    transform: translate(-25%, -50%);
     font-size: 40px;
     font-weight: 600;
     color: white;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+}
+
+@media (max-width: 600px) {
+    .banner{
+        height: 120px;
+        margin-top: 0;
+    }
+    .banner-text{
+        font-size: 22px;
+    }
+    .banner-img{
+        border-radius: 10px;
+    }
 }

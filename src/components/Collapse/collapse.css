@@ -34,3 +34,21 @@
 ul {
     list-style: none;
 }
+
+@media (max-width: 600px) {
+    .collapse{
+        margin-top: 15px;
+        width: 100%;
+    }
+    .collapse-titre{
+        height: 30px;
+        font-size: 16px;
+    }
+    .collapse-text{
+        font-size: 14px;
+    }
+    .collapse-icone{
+        height: 10px;
+    }
+    
+}

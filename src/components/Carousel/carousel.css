@@ -2,10 +2,10 @@
     position: relative; /* Définir la position relative pour le conteneur du carousel */
     overflow: hidden;
     width: 100%;
-    height: 400px; /* Définir la hauteur souhaitée */
+    height: 600px; /* Définir la hauteur souhaitée */
     margin-top: 50px;
     border-radius: 25px;
-    cursor: wait;
+    cursor:cell;
 }
 .buttons-container.active {
     width: 100%;

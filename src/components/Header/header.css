@@ -22,3 +22,13 @@
 .logo-kasa-header {
     height: 50px;
 }
+
+@media (max-width: 600px) {
+    .logo-kasa-header {
+        height: 30px;
+    }
+    .nav a {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+}

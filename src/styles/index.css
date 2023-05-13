@@ -10,6 +10,14 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
 }
-#root {
+.main,.header {
     padding: 20px;
 }
+
+@media (max-width: 600px) {
+    .main,.header{
+        padding: 10px 15px;
+    }
+}
+
+

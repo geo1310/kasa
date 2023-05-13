@@ -44,3 +44,25 @@
     align-items: center;
     margin-top: 20px;
 }
+@media (max-width: 600px) {
+    .house-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        
+        margin-top: 20px;
+    }
+    .house-title h1 {
+        font-size: 18px;
+        margin: 0;
+    }
+    .house-location {
+        font-size: 14px;
+    }
+    .house-collapse {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}
+

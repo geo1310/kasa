@@ -7,10 +7,10 @@ title : titre centré sur la banniere
 */
 import './banner.css';
 
-function Banner({ img, title }) {
+function Banner({ img, title}) {
     return (
         <div className="banner">
-            <img className="banner-img" src={img} alt={img}></img>
+            <img className={"banner-img"} src={img} alt={img}></img>
             {title ? <h1 className="banner-text">{title}</h1> : null}
         </div>
     );
