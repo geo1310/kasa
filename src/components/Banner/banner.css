@@ -13,8 +13,8 @@
     position: absolute;
     margin: 0;
     top: 50%;
-    left: 25%;
-    transform: translate(-25%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 40px;
     font-weight: 600;
     color: white;
@@ -22,14 +22,16 @@
 }
 
 @media (max-width: 600px) {
-    .banner{
+    .banner {
         height: 120px;
         margin-top: 0;
     }
-    .banner-text{
+    .banner-text {
         font-size: 22px;
+        left: 25%;
+        transform: translate(-25%, -50%);
     }
-    .banner-img{
+    .banner-img {
         border-radius: 10px;
     }
 }

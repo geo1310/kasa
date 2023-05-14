@@ -12,7 +12,7 @@ import './card.css';
 
 function Card({ title, url, cover, id }) {
     return (
-        <Link className="nav-accueil" to={url}>
+        <Link to={url}>
             <div className="card">
                 <img className="card-img" src={cover} alt={`logement ${id}`} />
                 <span className="card-title">{title}</span>
