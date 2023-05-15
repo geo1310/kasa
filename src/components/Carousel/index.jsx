@@ -1,6 +1,6 @@
 /* 
 Composant Carousel
-Création d'un carousel faisant défiler une liste d'images
+Création d'un carousel permettant de selectionner une liste d'images
 Props:
 pictures: liste d'images
 */
@@ -10,23 +10,13 @@ import '../../styles/carousel.css';
 
 function Carousel({ pictures }) {
     const [currentImage, setCurrentImage] = useState(0);
-    const [isPaused, setIsPaused] = useState(false);
-    const [buttonsClass, setButtonsClass] = useState('active');
+    const [indicatorsClass, setButtonsClass] = useState('active');
 
     useEffect(() => {
         if (pictures.length === 1) {
             setButtonsClass('');
         }
-        const interval = setInterval(() => {
-            if (!isPaused) {
-                setCurrentImage((prevImage) =>
-                    prevImage === pictures.length - 1 ? 0 : prevImage + 1
-                );
-            }
-        }, 4000);
-
-        return () => clearInterval(interval);
-    }, [pictures, isPaused]);
+    }, [pictures]);
 
     /* action sur le bouton precedent*/
     const goToPrevious = () => {
@@ -42,20 +32,8 @@ function Carousel({ pictures }) {
         );
     };
 
-    /* mise en pause du carousel*/
-    const mouseEnter = () => {
-        setIsPaused(true);
-    };
-    const mouseLeave = () => {
-        setIsPaused(false);
-    };
-
     return (
-        <div
-            className="carousel"
-            onMouseEnter={mouseEnter}
-            onMouseLeave={mouseLeave}
-        >
+        <div className="carousel">
             <div className="images-container">
                 {pictures.map((picture, index) => (
                     <div key={picture.slice(-10)}>
@@ -71,7 +49,7 @@ function Carousel({ pictures }) {
                     </div>
                 ))}
             </div>
-            <div className={`buttons-container ${buttonsClass}`}>
+            <div className={`buttons-container ${indicatorsClass}`}>
                 <div className="previous" onClick={goToPrevious}>
                     <i className="fa-solid fa-chevron-left"></i>
                 </div>
@@ -79,7 +57,7 @@ function Carousel({ pictures }) {
                     <i className="fa-solid fa-chevron-right"></i>
                 </div>
             </div>
-            <div className="indicators">
+            <div className={`indicators ${indicatorsClass}`}>
                 {currentImage + 1}/{pictures.length}
             </div>
         </div>
