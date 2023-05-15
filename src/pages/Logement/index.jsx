@@ -1,26 +1,33 @@
-import { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import { housingList } from '../../datas/housingList';
 import Carousel from '../../components/Carousel';
 import Collapse from '../../components/Collapse';
-import Error from '../../components/Error';
 import Tags from '../../components/Tags';
 import Rate from '../../components/Rate';
 import '../../styles/Logement.css';
 
 function Logement() {
+    const navigate = useNavigate();
     /* Déclaration des useState pour la visibilité des collapses*/
-    const [visibleDescription, setVisibleDescription] = useState(true);
-    const [visibleEquipements, setVisibleEquipements] = useState(true);
+    const [visibleDescription, setVisibleDescription] = useState(false);
+    const [visibleEquipements, setVisibleEquipements] = useState(false);
 
     /* Récupération de l'element avec l'id en parametre*/
-    const { id } = useParams();
-    const hebergement = housingList.find((element) => element.id === id);
+    const { id } = useParams(); // recuperation de l 'id dans l'url
+    const hebergement = housingList.find((element) => element.id === id); // recuperation de l'element id dans les datas
+
+    // cas ou le parametre de l'url n'est pas correct ou que l'id n'est pas trouvé
+    useEffect(() => {
+        if (!hebergement) {
+            navigate('/error');
+        }
+    }, [hebergement, navigate]);
 
     if (hebergement) {
         return (
             <div key={hebergement.id} className="house-global">
-                <Carousel pictures={hebergement.pictures} id={id} />
+                <Carousel pictures={hebergement.pictures} />
                 <div className="house-blocs">
                     <div className="house-bloc1">
                         <div className="house-title">
@@ -63,7 +70,7 @@ function Logement() {
             </div>
         );
     } else {
-        return <Error />;
+        return null;
     }
 }
 

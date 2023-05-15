@@ -10,7 +10,7 @@
     padding: 80px 50px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .cards {
         margin-top: 20px;
         border-radius: 0;

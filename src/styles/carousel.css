@@ -31,7 +31,7 @@
     height: 100%;
     object-fit: cover;
     opacity: 0;
-    transition: opacity 1s ease;
+    transition: opacity 1s ease-in-out;
 }
 .slide.active {
     opacity: 1;
@@ -54,9 +54,17 @@
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1600px) {
     .carousel {
-        height: 300px; /* Définir la hauteur souhaitée */
+        height: 450px; /* Définir la hauteur souhaitée */
+        margin-top: 10px;
+        border-radius: 10px;
+        cursor: cell;
+    }
+}
+@media (max-width: 650px) {
+    .carousel {
+        height: 255px; /* Définir la hauteur souhaitée */
         margin-top: 10px;
         border-radius: 10px;
         cursor: cell;

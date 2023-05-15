@@ -5,7 +5,7 @@ Props:
 tags: tags sous forme de liste
 */
 
-import './tags.css';
+import '../../styles/tags.css';
 
 function Tags({ tags }) {
     return (

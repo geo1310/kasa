@@ -5,11 +5,10 @@ Props:
 pictures: liste d'images
 */
 
-import { v4 as uuidv4 } from 'uuid'; //Génération de clés uniques
 import React, { useState, useEffect } from 'react';
-import './carousel.css';
+import '../../styles/carousel.css';
 
-function Carousel({ pictures, id }) {
+function Carousel({ pictures }) {
     const [currentImage, setCurrentImage] = useState(0);
     const [isPaused, setIsPaused] = useState(false);
     const [buttonsClass, setButtonsClass] = useState('active');
@@ -58,10 +57,10 @@ function Carousel({ pictures, id }) {
             onMouseLeave={mouseLeave}
         >
             <div className="images-container">
-                {pictures.map((image, index) => (
-                    <div key={uuidv4()}>
+                {pictures.map((picture, index) => (
+                    <div key={picture.slice(-10)}>
                         <img
-                            src={image}
+                            src={picture}
                             alt={`Slide ${index + 1}`}
                             className={
                                 index === currentImage

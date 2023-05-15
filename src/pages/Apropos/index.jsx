@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import '../../styles/Apropos.css';
 import Banner from '../../components/Banner';
-import bannerPhoto from '../../assets/images/kalen-emsley-montagnes foret.webp';
 import Collapse from '../../components/Collapse';
+import bannerPhoto from '../../assets/images/kalen-emsley-montagnes foret.webp';
+import '../../styles/Apropos.css';
 
 function Apropos() {
     /* Déclaration des useState pour la visibilité des collapses*/
-    const [visibleFiabilite, setVisibleFiabilite] = useState(true);
+    const [visibleFiabilite, setVisibleFiabilite] = useState(false);
     const [visibleRespect, setVisibleRespect] = useState(false);
     const [visibleService, setVisibleService] = useState(false);
     const [visibleSecurite, setVisibleSecurite] = useState(false);

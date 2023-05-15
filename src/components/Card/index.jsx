@@ -8,7 +8,7 @@ cover: photo vignette de la carte
 */
 
 import { Link } from 'react-router-dom';
-import './card.css';
+import '../../styles/card.css';
 
 function Card({ title, url, cover, id }) {
     return (

@@ -3,7 +3,7 @@ Composant Footer
 Création d'un footer
 */
 
-import './footer.css';
+import '../../styles/footer.css';
 import logo from '../../assets/logos/logo-kasa-white.png';
 
 function Footer() {

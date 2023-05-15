@@ -1,13 +1,13 @@
-.house-blocs{
+.house-blocs {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
-.house-bloc1{
+.house-bloc1 {
     display: flex;
     flex-direction: column;
 }
-.house-bloc2{
+.house-bloc2 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -60,15 +60,15 @@
     align-items: center;
     margin-top: 20px;
 }
-@media (max-width: 600px) {
 
-    .house-blocs{
+@media (max-width: 650px) {
+    .house-blocs {
         flex-direction: column;
         align-items: flex-start;
-        
+
         margin-top: 10px;
     }
-    .house-bloc2{
+    .house-bloc2 {
         width: 100%;
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -102,12 +102,10 @@
     }
 }
 @media (max-width: 330px) {
-
-    .house-blocs{
-        
+    .house-blocs {
         margin-top: 10px;
     }
-    .house-bloc2{
+    .house-bloc2 {
         margin-top: 10px;
     }
     .house-host-name {

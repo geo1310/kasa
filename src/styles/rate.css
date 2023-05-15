@@ -1,4 +1,4 @@
-.rate{
+.rate {
     margin-top: 25px;
 }
 .fa-star {
@@ -10,8 +10,8 @@
     color: #ff6060;
 }
 
-@media (max-width: 600px) {
-    .rate{
+@media (max-width: 650px) {
+    .rate {
         margin-top: 0;
     }
     .fa-star {
@@ -20,7 +20,7 @@
     }
 }
 @media (max-width: 330px) {
-    .rate{
+    .rate {
         margin-top: 0;
     }
     .fa-star {

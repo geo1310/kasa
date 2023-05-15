@@ -5,7 +5,7 @@ Création d'un header
 
 import { NavLink } from 'react-router-dom';
 import logo from '../../assets/logos/logo-kasa.svg';
-import './header.css';
+import '../../styles/header.css';
 
 function Header() {
     return (

@@ -4,22 +4,31 @@ Création d'une notation de 1 à 5 avec des etoiles
 Props:
 rating: note de 1 à 5
 */
-import { v4 as uuidv4 } from 'uuid'; //Génération de clés uniques
-import './rate.css';
+import '../../styles/rate.css';
 
 function Rate({ rating }) {
-    const rateList = [0, 0, 0, 0, 0];
+    /* création de la liste de notes pour l'affichage du rating*/
+    const rateList = [
+        [1, 0],
+        [2, 0],
+        [3, 0],
+        [4, 0],
+        [5, 0],
+    ];
     for (let i = 0; i < rating; i++) {
-        rateList[i] = 1;
+        rateList[i][1] = 1;
     }
 
     return (
         <div className="rate">
             {rateList.map((rateNote, index) => {
-                return rateNote === 0 ? (
-                    <i key={uuidv4()} className="fa-solid fa-star"></i>
+                return rateNote[1] === 0 ? (
+                    <i key={rateNote[0]} className="fa-solid fa-star"></i>
                 ) : (
-                    <i key={uuidv4()} className="fa-solid fa-star active"></i>
+                    <i
+                        key={rateNote[0] + 'active'}
+                        className="fa-solid fa-star active"
+                    ></i>
                 );
             })}
         </div>

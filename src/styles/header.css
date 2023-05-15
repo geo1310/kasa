@@ -22,7 +22,7 @@
     height: 50px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .logo-kasa-header {
         height: 30px;
     }

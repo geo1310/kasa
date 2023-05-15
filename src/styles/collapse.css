@@ -35,37 +35,35 @@ ul {
     list-style: none;
 }
 
-@media (max-width: 600px) {
-    .collapse{
+@media (max-width: 650px) {
+    .collapse {
         margin-top: 15px;
         width: 100%;
     }
-    .collapse-titre{
+    .collapse-titre {
         height: 30px;
         font-size: 16px;
     }
-    .collapse-text{
+    .collapse-text {
         font-size: 14px;
     }
-    .collapse-icone{
+    .collapse-icone {
         height: 10px;
     }
-    
 }
 @media (max-width: 330px) {
-    .collapse{
+    .collapse {
         margin-top: 10px;
         width: 100%;
     }
-    .collapse-titre{
+    .collapse-titre {
         height: 20px;
         font-size: 14px;
     }
-    .collapse-text{
+    .collapse-text {
         font-size: 12px;
     }
-    .collapse-icone{
+    .collapse-icone {
         height: 7px;
     }
-    
 }
