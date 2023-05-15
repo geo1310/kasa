@@ -74,11 +74,12 @@
         margin: 0 20px 0 20px;
         font-size: 28px;
     }
-    .indicators {
+    .indicators.active {
         font-size: 18px;
         left: 50%;
         transform: translatex(-50%);
         bottom: 10px;
+        display: none;
     }
     .previous {
         height: 300px;
