@@ -14,7 +14,7 @@ function Home() {
                         key={house.id}
                         id={house.id}
                         title={house.title}
-                        url={'/logement/' + house.id}
+                        url={'/logement/'}
                         cover={house.cover}
                     />
                 ))}

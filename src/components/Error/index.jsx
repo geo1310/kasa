@@ -1,11 +1,11 @@
-/* 
-Composant Error
-Création d'un contenu erreur 404 en cas d'url incorrecte
-*/
-
 import { Link } from 'react-router-dom';
 import '../../styles/error.css';
 
+/**
+ * @component
+ * @description  Génère un contenu pour une erreur 404 page non trouvée ou parametre incorrect
+ * @returns {JSX}
+ */
 function Error404() {
     return (
         <div className="error-404">

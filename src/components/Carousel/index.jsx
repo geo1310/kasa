@@ -1,31 +1,31 @@
-/* 
-Composant Carousel
-Création d'un carousel permettant de selectionner une liste d'images
-Props:
-pictures: liste d'images
-*/
-
 import React, { useState, useEffect } from 'react';
 import '../../styles/carousel.css';
 
+/**
+ * @component
+ * @description  Génère un carousel permettant de selectionner une liste d'images et de les faire défiler
+ * @param {Array} pictures liste d'images à afficher
+ * @returns {JSX}
+ */
 function Carousel({ pictures }) {
-    const [currentImage, setCurrentImage] = useState(0);
-    const [indicatorsClass, setButtonsClass] = useState('active');
+    const [currentImage, setCurrentImage] = useState(0); // image courante du carousel
+    const [indicatorsClass, setButtonsClass] = useState('active'); // classe active pour les boutons et l'indicateur de page
 
+    // si la liste d'images ne contient qu'une seule image on cache les boutons et indicateur en supprimant la classe active
     useEffect(() => {
         if (pictures.length === 1) {
             setButtonsClass('');
         }
     }, [pictures]);
 
-    /* action sur le bouton precedent*/
+    // détermine l'image precedente à afficher apres un clic sur previous
     const goToPrevious = () => {
         setCurrentImage((prevImage) =>
             prevImage === 0 ? pictures.length - 1 : prevImage - 1
         );
     };
 
-    /* action sur le bouton suivant*/
+    // détermine l'image suivante à afficher apres un clic sur next
     const goToNext = () => {
         setCurrentImage((prevImage) =>
             prevImage === pictures.length - 1 ? 0 : prevImage + 1

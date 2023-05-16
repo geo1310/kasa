@@ -13,7 +13,7 @@ function Apropos() {
 
     return (
         <div>
-            <Banner img={bannerPhoto} title="" />
+            <Banner img={bannerPhoto} />
             <div className="apropos-global">
                 <Collapse
                     title="Fiabilite"

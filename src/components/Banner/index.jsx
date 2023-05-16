@@ -1,13 +1,13 @@
-/* 
-Composant Banner
-Création d'une banniere comportant une image plus un titre 
-Props :
-img : image de la banniere
-title : titre centré sur la banniere
-*/
 import '../../styles/banner.css';
 
-function Banner({ img, title }) {
+/**
+ * @component
+ * @description  Génère une Banniere contenant une image et un titre optionnel centré sur l'image
+ * @param {string} img source de l'image à afficher
+ * @param {string} title titre de la banniere
+ * @returns {JSX}
+ */
+function Banner({ img, title = '' }) {
     return (
         <div className="banner">
             <img className={'banner-img'} src={img} alt={img}></img>
