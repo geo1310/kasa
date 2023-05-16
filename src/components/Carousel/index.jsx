@@ -9,12 +9,12 @@ import '../../styles/carousel.css';
  */
 function Carousel({ pictures }) {
     const [currentImage, setCurrentImage] = useState(0); // image courante du carousel
-    const [indicatorsClass, setButtonsClass] = useState('active'); // classe active pour les boutons et l'indicateur de page
+    const [indicatorsClass, setIndicatorsClass] = useState('active'); // classe active pour les boutons et l'indicateur de page
 
     // si la liste d'images ne contient qu'une seule image on cache les boutons et indicateur en supprimant la classe active
     useEffect(() => {
         if (pictures.length === 1) {
-            setButtonsClass('');
+            setIndicatorsClass('');
         }
     }, [pictures]);
 
