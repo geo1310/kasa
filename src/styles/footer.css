@@ -18,20 +18,22 @@
 }
 .fa-copyright {
     margin-right: 10px;
+    font-size: 20px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 950px) {
     .footer {
-        margin-top: 50px;
+        height: 150px;
     }
     .text-footer {
         font-size: 14px;
     }
-}
-@media (max-width: 330px) {
-    .footer {
-        margin-top: 30px;
+    .fa-copyright {
+        font-size: 12px;
     }
+}
+
+@media (max-width: 350px) {
     .text-footer {
         font-size: 12px;
     }

@@ -30,7 +30,7 @@
     height: 100%;
     object-fit: cover;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 }
 .slide.active {
     opacity: 1;
@@ -59,15 +59,14 @@
         height: 450px; /* Définir la hauteur souhaitée */
         margin-top: 10px;
         border-radius: 10px;
-        cursor: cell;
     }
 }
-@media (max-width: 650px) {
+@media (max-width: 950px) {
     .carousel {
         height: 255px; /* Définir la hauteur souhaitée */
         margin-top: 10px;
         border-radius: 10px;
-        cursor: cell;
+        
     }
     .fa-chevron-left,
     .fa-chevron-right {
@@ -86,29 +85,5 @@
     }
     .next {
         height: 300px;
-    }
-}
-@media (max-width: 330px) {
-    .carousel {
-        height: 200px; /* Définir la hauteur souhaitée */
-        margin-top: 0;
-        border-radius: 10px;
-        cursor: cell;
-    }
-    .fa-chevron-left,
-    .fa-chevron-right {
-        margin: 0 10px 0 10px;
-        font-size: 20px;
-    }
-    .indicators {
-        font-size: 14px;
-        left: 50%;
-        bottom: 10px;
-    }
-    .previous {
-        height: 200px;
-    }
-    .next {
-        height: 200px;
     }
 }

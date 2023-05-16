@@ -10,7 +10,7 @@
     color: #ff6060;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 950px) {
     .rate {
         margin-top: 0;
     }
@@ -19,7 +19,7 @@
         margin-left: 5px;
     }
 }
-@media (max-width: 330px) {
+@media (max-width: 500px) {
     .rate {
         margin-top: 0;
     }

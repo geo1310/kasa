@@ -24,7 +24,7 @@
 }
 .collapse-text {
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 400;
     color: #ff6060;
     background-color: #f6f6f6;
     border-radius: 0 0 5px 5px;
@@ -35,17 +35,17 @@ ul {
     list-style: none;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 950px) {
     .collapse {
         margin-top: 15px;
         width: 100%;
     }
     .collapse-titre {
-        height: 30px;
-        font-size: 16px;
+        height: 20px;
+        font-size: 13px;
     }
     .collapse-text {
-        font-size: 14px;
+        font-size: 12px;
     }
     .collapse-icone {
         height: 10px;
