@@ -1,12 +1,12 @@
-/* 
-Composant Header
-Création d'un header
-*/
-
 import { NavLink } from 'react-router-dom';
 import logo from '../../assets/logos/logo-kasa.svg';
 import '../../styles/header.css';
 
+/**
+ * @component Header
+ * @description  Génère le header des differents contenus
+ * @returns {JSX}
+ */
 function Header() {
     return (
         <header className="header">
@@ -17,6 +17,7 @@ function Header() {
             ></img>
             <div className="nav">
                 <ul>
+                    {/* Utilisation du composant NavLink pour ajouter automatiquement la classe active*/}
                     <li>
                         <NavLink className="nav-accueil" to="/accueil">
                             Accueil

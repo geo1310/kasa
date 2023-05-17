@@ -1,12 +1,11 @@
-/* 
-Composant Tags
-Création d'une liste de tags avec un style defini
-Props:
-tags: tags sous forme de liste
-*/
-
 import '../../styles/tags.css';
 
+/**
+ * @component Tags
+ * @description  Génère une liste de tags avec un style prédéfini
+ * @param {Array} tags liste des tags à afficher
+ * @returns {JSX}
+ */
 function Tags({ tags }) {
     return (
         <div className="tags">

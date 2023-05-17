@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import '../../styles/error.css';
 
 /**
- * @component
+ * @component Error404
  * @description  Génère un contenu pour une erreur 404 page non trouvée ou parametre incorrect
  * @returns {JSX}
  */

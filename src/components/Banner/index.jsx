@@ -1,7 +1,7 @@
 import '../../styles/banner.css';
 
 /**
- * @component
+ * @component Banner
  * @description  Génère une Banniere contenant une image et un titre optionnel centré sur l'image
  * @param {string} img source de l'image à afficher
  * @param {string} title titre de la banniere

@@ -1,11 +1,11 @@
-/* 
-Composant Footer
-Création d'un footer
-*/
-
 import '../../styles/footer.css';
 import logo from '../../assets/logos/logo-kasa-white.png';
 
+/**
+ * @component Footer
+ * @description  Génère le footer des differents contenus
+ * @returns {JSX}
+ */
 function Footer() {
     return (
         <footer className="footer">

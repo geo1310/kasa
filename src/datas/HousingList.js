@@ -1,3 +1,4 @@
+// échantillon de Datas avant création du Backend
 export const housingList = [
     {
         id: 'c67ab8a7',

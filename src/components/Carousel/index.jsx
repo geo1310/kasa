@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../../styles/carousel.css';
 
 /**
- * @component
+ * @component Carousel
  * @description  Génère un carousel permettant de selectionner une liste d'images et de les faire défiler
  * @param {Array} pictures liste d'images à afficher
  * @returns {JSX}
@@ -12,6 +12,7 @@ function Carousel({ pictures }) {
     const [indicatorsClass, setIndicatorsClass] = useState('active'); // classe active pour les boutons et l'indicateur de page
 
     // si la liste d'images ne contient qu'une seule image on cache les boutons et indicateur en supprimant la classe active
+    // utilisation e useEffect pour eviter l'erreur too many renders
     useEffect(() => {
         if (pictures.length === 1) {
             setIndicatorsClass('');
@@ -19,6 +20,7 @@ function Carousel({ pictures }) {
     }, [pictures]);
 
     // détermine l'image precedente à afficher apres un clic sur previous
+    // gestion des debuts et fins de liste
     const goToPrevious = () => {
         setCurrentImage((prevImage) =>
             prevImage === 0 ? pictures.length - 1 : prevImage - 1
@@ -26,6 +28,7 @@ function Carousel({ pictures }) {
     };
 
     // détermine l'image suivante à afficher apres un clic sur next
+    // gestion des debuts et fins de liste
     const goToNext = () => {
         setCurrentImage((prevImage) =>
             prevImage === pictures.length - 1 ? 0 : prevImage + 1
