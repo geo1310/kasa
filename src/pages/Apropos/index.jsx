@@ -4,6 +4,12 @@ import Collapse from '../../components/Collapse';
 import bannerPhoto from '../../assets/images/kalen-emsley-montagnes foret.webp';
 import '../../styles/Apropos.css';
 
+/**
+ * @component Apropos
+ * @description  Génère le contenu de la page apropos
+ *
+ * @returns {JSX}
+ */
 function Apropos() {
     /* Déclaration des useState pour la visibilité des collapses*/
     const [visibleFiabilite, setVisibleFiabilite] = useState(false);

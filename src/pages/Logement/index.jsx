@@ -7,6 +7,12 @@ import Tags from '../../components/Tags';
 import Rate from '../../components/Rate';
 import '../../styles/Logement.css';
 
+/**
+ * @component Logement
+ * @description  Génère le contenu d'une fiche logement apres avoir cliquer sur sa carte
+ *
+ * @returns {JSX}
+ */
 function Logement() {
     const navigate = useNavigate();
     /* Déclaration des useState pour la visibilité des collapses*/
@@ -17,7 +23,7 @@ function Logement() {
     const { id } = useParams(); // recuperation de l 'id dans l'url
     const hebergement = housingList.find((element) => element.id === id); // recuperation de l'element id dans les datas
 
-    // cas ou le parametre de l'url n'est pas correct ou que l'id n'est pas trouvé
+    /* Cas ou le parametre de l'url n'est pas correct ou que l'id n'est pas trouvé redirection vers la page erreur */
     useEffect(() => {
         if (!hebergement) {
             navigate('/error');

@@ -4,6 +4,12 @@ import bannerPhoto from '../../assets/images/mer cote.webp';
 import { housingList } from '../../datas/housingList';
 import '../../styles/Home.css';
 
+/**
+ * @component Home
+ * @description  Génère le contenu de la page d'accueil
+ *
+ * @returns {JSX}
+ */
 function Home() {
     return (
         <div className="house-global">
