@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 90%;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 .collapse button {
     background-color: #ff6060;
@@ -38,6 +39,7 @@ ul {
 @media (max-width: 950px) {
     .collapse {
         margin-top: 15px;
+        margin-bottom: 5px;
         width: 100%;
     }
     .collapse-titre {
