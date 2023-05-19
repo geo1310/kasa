@@ -1,4 +1,10 @@
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+
+}
 .tag {
+    
     background-color: #ff6060;
     padding: 10px 20px;
     border-radius: 15px;
@@ -6,11 +12,13 @@
     font-size: 14px;
     font-weight: 500;
     margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 
 @media (max-width: 950px) {
     .tag {
+
         font-size: 9px;
         padding: 5px 10px;
         border-radius: 8px;
