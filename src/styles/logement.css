@@ -1,0 +1,133 @@
+.house-blocs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.house-bloc1 {
+    display: flex;
+    flex-direction: column;
+}
+.house-bloc2 {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-end;
+}
+.house-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.house-title h1 {
+    position: relative;
+    color: #ff6060;
+    font-weight: 500;
+    font-size: 36px;
+    margin: 0;
+}
+.house-host {
+    display: flex;
+    align-items: center;
+}
+.house-host-picture {
+    width: 100px;
+    border-radius: 50%;
+}
+.house-host-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ff6060;
+    margin-right: 20px;
+}
+.house-location {
+    color: #ff6060;
+    font-size: 18px;
+    font-weight: 500;
+}
+.house-collapse {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.collapse {
+    flex-basis: 47%;
+}
+.house-tags-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 950px) {
+    .house-blocs {
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin-top: 10px;
+    }
+    .house-bloc2 {
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .house-host-name {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    .house-host-picture {
+        width: 50px;
+    }
+    .house-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .house-title h1 {
+        font-size: 18px;
+        margin: 0;
+    }
+    .house-location {
+        font-size: 14px;
+    }
+    .house-collapse {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 330px) {
+    .house-blocs {
+        margin-top: 10px;
+    }
+    .house-bloc2 {
+        margin-top: 10px;
+    }
+    .house-host-name {
+        font-size: 9px;
+        margin-right: 5px;
+    }
+    .house-host-picture {
+        width: 40px;
+    }
+    .house-title {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .house-title h1 {
+        font-size: 12px;
+        margin: 0;
+    }
+    .house-location {
+        font-size: 10px;
+    }
+    .house-collapse {
+        flex-direction: column;
+        margin-top: 5px;
+    }
+}
