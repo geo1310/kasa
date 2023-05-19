@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Banner from '../../components/Banner';
 import Collapse from '../../components/Collapse';
 import bannerPhoto from '../../assets/images/kalen-emsley-montagnes foret.webp';
-import '../../styles/Apropos.css';
+import '../../styles/apropos.css';
 
 /**
  * @component Apropos

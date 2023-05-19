@@ -4,7 +4,7 @@ import '../../styles/banner.css';
  * @component Banner
  * @description  Génère une Banniere contenant une image et un titre optionnel centré sur l'image
  * @param {string} img source de l'image à afficher
- * @param {string} title titre de la banniere
+ * @param {string} [title=""] titre de la banniere
  * @returns {JSX}
  */
 function Banner({ img, title = '' }) {

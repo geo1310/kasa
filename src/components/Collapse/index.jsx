@@ -15,8 +15,8 @@ function Collapse({ title, textList, visible, setVisible }) {
     /**
      * @function ToggleText
      * @description change l'etat de visibilité apres un clic sur le bandeau titre du collapse
-     * @param {boolean} visible etat de visibilite useState du contenu concerné
-     * @param {Function} setVisible changement d'etat de visibilite dans le useState du contenu concerné
+     * @param {boolean} visible etat de visibilite du contenu concerné
+     * @param {Function} setVisible changement d'etat de visibilite du contenu concerné
      */
     function ToggleText(visible, setVisible) {
         setVisible(!visible);

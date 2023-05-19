@@ -5,7 +5,7 @@ import Carousel from '../../components/Carousel';
 import Collapse from '../../components/Collapse';
 import Tags from '../../components/Tags';
 import Rate from '../../components/Rate';
-import '../../styles/Logement.css';
+import '../../styles/logement.css';
 
 /**
  * @component Logement

@@ -2,7 +2,7 @@ import Card from '../../components/Card';
 import Banner from '../../components/Banner';
 import bannerPhoto from '../../assets/images/mer cote.webp';
 import { housingList } from '../../datas/housingList';
-import '../../styles/Home.css';
+import '../../styles/home.css';
 
 /**
  * @component Home
